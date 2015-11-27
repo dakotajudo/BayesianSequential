@@ -1,0 +1,13 @@
+Sequential Bayesian Analysis of a Series of Trials
+========================================================
+
+```{r}
+library(ASA.CSSA.SSSA)
+data(cpt)
+#remove fill
+cpt.dat <- subset(cpt.dat,!(cpt.dat$entry=="fill"))
+cpt.dat$entry <- as.factor(as.character(cpt.dat$entry))
+```
+
+
+See section in Multiple Comparisons in R on group sequential and adaptive designs.
